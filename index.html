@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eshaal Farooq — Designer &amp; Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="name">Eshaal Farooq</h1>
+      <p class="tagline">Designer &amp; Developer</p>
+    </header>
+
+    <!-- Main 3-Column Section -->
+    <main class="main-content">
+      <!-- Left: About Me -->
+      <section class="column col-about" aria-label="About Me">
+        <div class="about-card">
+          <span class="sub-label">About</span>
+          <p class="about-text">
+            Hi I am a third year software engineering student and this is my first vibe coded website
+          </p>
+        </div>
+      </section>
+
+      <!-- Center: Cartoon Portrait (Visual Focus) -->
+      <section class="column col-portrait" aria-label="Portrait">
+        <div class="portrait-card">
+          <div class="portrait-glow"></div>
+          <img 
+            src="images/me.png" 
+            alt="Cartoon portrait of Eshaal Farooq" 
+            class="portrait-img"
+          >
+        </div>
+      </section>
+
+      <!-- Right: Prototype Image & Caption -->
+      <section class="column col-prototype" aria-label="Design Prototype">
+        <figure class="prototype-card">
+          <div class="prototype-preview" id="prototypeTrigger" role="button" tabindex="0" title="Click to view full image">
+            <img 
+              src="images/prototype.png" 
+              alt="Archivist - a book recommender app design prototype" 
+              class="prototype-img"
+            >
+            <div class="preview-overlay">
+              <span>View Prototype</span>
+            </div>
+          </div>
+          <figcaption class="prototype-caption">
+            Archivist - a book recommender app
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <!-- Lightweight Image Modal for viewing prototype in detail -->
+  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close image preview">&times;</button>
+      <img src="images/prototype.png" alt="Archivist design prototype full view" class="modal-img">
+      <p class="modal-caption-text">Archivist - a book recommender app</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
