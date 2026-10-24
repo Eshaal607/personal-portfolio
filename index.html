@@ -4,72 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eshaal Farooq — Designer &amp; Developer</title>
+  
+  <!-- Editorial Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-container">
-    <!-- Header -->
-    <header class="header">
-      <h1 class="name">Eshaal Farooq</h1>
-      <p class="tagline">Designer &amp; Developer</p>
+  <!-- Ambient Atmospheric Lighting -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <div class="page-wrapper">
+    <!-- Top Metadata Bar -->
+    <header class="top-bar">
+      <div class="meta-tag meta-left">UI/UX &amp; WEB DESIGNER</div>
+      <div class="meta-tag meta-right">CREATIVE PORTFOLIO</div>
     </header>
 
-    <!-- Main 3-Column Section -->
-    <main class="main-content">
-      <!-- Left: About Me -->
-      <section class="column col-about" aria-label="About Me">
-        <div class="about-card">
-          <span class="sub-label">About</span>
-          <p class="about-text">
-            Hi I am a third year software engineering student and this is my first vibe coded website
+    <!-- Main Editorial Stage -->
+    <main class="hero-stage">
+      <!-- Giant Editorial Backdrop Title (Letters tightened so full word fits) -->
+      <div class="editorial-backdrop" aria-hidden="true">
+        <span>PORTFOLIO</span>
+      </div>
+
+      <!-- 3-Column Layout: Portrait in center overlaps PORTFOLIO; all text sits under the heading -->
+      <div class="hero-grid">
+        <!-- Left-hand Column: Statement, Pill Badge, Name -->
+        <section class="hero-col hero-left" aria-label="Introduction">
+          <p class="hero-statement">
+            I DESIGN DIGITAL EXPERIENCES<br>THAT INSPIRE &amp; CONNECT
           </p>
-        </div>
-      </section>
 
-      <!-- Center: Cartoon Portrait (Visual Focus) -->
-      <section class="column col-portrait" aria-label="Portrait">
-        <div class="portrait-card">
-          <div class="portrait-glow"></div>
-          <img 
-            src="images/me.png" 
-            alt="Cartoon portrait of Eshaal Farooq" 
-            class="portrait-img"
-          >
-        </div>
-      </section>
-
-      <!-- Right: Prototype Image & Caption -->
-      <section class="column col-prototype" aria-label="Design Prototype">
-        <figure class="prototype-card">
-          <div class="prototype-preview" id="prototypeTrigger" role="button" tabindex="0" title="Click to view full image">
-            <img 
-              src="images/prototype.png" 
-              alt="Archivist - a book recommender app design prototype" 
-              class="prototype-img"
-            >
-            <div class="preview-overlay">
-              <span>View Prototype</span>
-            </div>
+          <div class="status-pill">
+            <span class="status-text">AVAILABLE FOR PROJECTS</span>
+            <span class="status-icon" aria-hidden="true">&#10022;</span>
           </div>
-          <figcaption class="prototype-caption">
-            Archivist - a book recommender app
-          </figcaption>
-        </figure>
-      </section>
-    </main>
-  </div>
 
-  <!-- Lightweight Image Modal for viewing prototype in detail -->
-  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-dialog">
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close image preview">&times;</button>
-      <img src="images/prototype.png" alt="Archivist design prototype full view" class="modal-img">
-      <p class="modal-caption-text">Archivist - a book recommender app</p>
-    </div>
+          <div class="signature-block">
+            <h1 class="name-signature">Eshaal Farooq</h1>
+          </div>
+        </section>
+
+        <!-- Center Column: Cartoon Portrait (The ONLY element overlapping the PORTFOLIO text) -->
+        <section class="hero-col hero-center" aria-label="Portrait">
+          <div class="portrait-stage">
+            <div class="portrait-halo"></div>
+            <img 
+              src="images/me.png" 
+              alt="Cartoon portrait of Eshaal Farooq" 
+              class="portrait-image"
+            >
+          </div>
+        </section>
+
+        <!-- Right-hand Column: About Me Paragraph (Under heading, clear of portrait) -->
+        <section class="hero-col hero-right" aria-label="About Me">
+          <div class="about-block">
+            <p class="about-description">
+              Hi I’m Eshaal, a Software Engineering student passionate about software design, web development, and building user-focused solutions
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
